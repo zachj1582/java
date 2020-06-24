@@ -1,20 +1,23 @@
 class Statically {
     //fix this code, so all of the instantiation and console.logs() work.  Try not to change the signature of the class, unless absolutely necessary.
-    static #glue = "Epoxy";
+    #glue = "Epoxy";
     jello = "Jello";
+
+    getGlue(){
+      return this.#glue
+    }
 
     moveAndShake() {
         console.log("Never stagnate in life.  Be agile, change, and improve...");
     }
 
     static stubborn() {
-        this.moveAndShake();
         console.log("Please don't make me change... I just don't like it...");
     }
 
     static explain() {
-        stubborn();
-        console.log(#glue);
+        this.stubborn();
+        console.log('It seems to me that they work very similarly, I cannot tell you the difference...   As for changes made, added Hash to console and made a getter. took static away from things. It should be pretty clear if you compare the code.');
         //write an explanation for how the keyword static behaves differently in javascript vs. java.
     }
 
@@ -25,10 +28,10 @@ class Statically {
 const stats = new Statically();
 
 stats.moveAndShake();
-stubborn();
-stats.explain();
+Statically.stubborn();
+Statically.explain();
 
-console.log(stats.#glue);
+console.log(stats.getGlue());
 console.log(stats.jello);
 
 //Once you have finished getting statistically.js to run, refactor the code here in Java.
