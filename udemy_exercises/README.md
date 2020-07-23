@@ -25,14 +25,14 @@ For your convenience, the exercises from UDEMY are summarized below:
        - Duration
      - **Album class** 
        - Playlist of **Songs**.
-       - addPlayist() (songs must appear in the list in the order by which they were added)
+       - addPlayist() (udemy_exercises.songs must appear in the list in the order by which they were added)
        - stop()
        - nextSong()
        - previousSong()
        - repeatSong()
        - showPlaylist()
        - removePlaylist()
-     - **A song must exist in an album before it can be added to the playlist (so you can only play songs that you own.)**
+     - **A song must exist in an album before it can be added to the playlist (so you can only play udemy_exercises.songs that you own.)**
 
 3. **Cell Phone with Java Classes**
     - **CellPhone Class:**
